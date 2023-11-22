@@ -9,7 +9,6 @@ function NewTransaction(){
   
   function addNewTransaction(e){
     e.preventDefault();
-    console.log(expenseState);
 
     dispatch({
       type : 'ADD_TRANSACTION',
@@ -19,10 +18,6 @@ function NewTransaction(){
         amount: amount,
       }
     })
-
-    setTimeout(()=>{
-      console.log(expenseState,'after');
-    },1000);
     
     setText('');
     setAmount('');

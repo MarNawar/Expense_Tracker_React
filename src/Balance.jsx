@@ -23,7 +23,7 @@ function Balance(){
 
     setMinus(()=>{
       return expenseState.transactions.reduce((acc, expense)=>{
-        return acc + (expense.amount<0? expense.amount: 0);
+        return acc + (expense.amount<0? Math.abs(expense.amount): 0);
       },0);
     })
     
