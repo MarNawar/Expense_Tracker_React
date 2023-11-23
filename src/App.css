@@ -120,9 +120,27 @@ li:hover .delete-btn{
   padding:10px;
   margin:10px 0px 0px 0px;
 }
+
+.form-control.success input[type = 'text'], .form-control.success input[type = 'number'] {
+  outline: none;
+  border: 2px solid #27ae60;
+}
+
+.form-control.failure input[type = 'text'], .form-control.failure input[type = 'number'] {
+  outline: none;
+  border: 2px solid #e74c3c;
+}
+
 .form-control span{
   font-size:14px;
   color:#e74c3c;
+  visibility: hidden;
+}
+
+.form-control.failure span{
+  font-size:14px;
+  color:#e74c3c;
+  visibility: visible;
 }
 
 .btn{
