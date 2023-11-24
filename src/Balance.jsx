@@ -33,7 +33,7 @@ function Balance(){
   return (
     <>
       <h4>Your Balance</h4>
-      <h2 className = "total">${balance}</h2>
+      <h2 className = "total">{balance>0?'+':'-'}${Math.abs(balance)}</h2>
       <div className="inc-exp-container">
         <div>
           <h4>Income</h4>

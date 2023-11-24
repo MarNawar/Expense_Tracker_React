@@ -3,7 +3,7 @@ import { Transaction } from './context/context';
 
 function NewTransaction() {
   const [text, setText] = useState('')
-  const [amount, setAmount] = useState('');
+  const [amount, setAmount] = useState(0);
   const [inputTextClasses, setInputTextClasses] = useState('form-control');
   const [inputAmountClasses, setInputAmountClasses] = useState('form-control');
   const { dispatch } = useContext(Transaction);
@@ -71,7 +71,7 @@ function NewTransaction() {
           </label>
           <input type="number"
             id="amount"
-            value={amount}
+            value={amount===0?'':amount}
             onChange={(e) => setAmount(+e.target.value)}
             placeholder="Enter amount..." />
           <span>Required Field</span>
