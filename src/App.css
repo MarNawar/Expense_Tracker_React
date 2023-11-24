@@ -156,9 +156,9 @@ li:hover .delete-btn{
 
 
 @media screen and (max-width: 500px) {
-  *{
-    margin-left: 3px;
-    margin-right:3px;
+  main{
+    margin-left: 5px;
+    margin-right:5px;
   }
   
   .delete-btn{
